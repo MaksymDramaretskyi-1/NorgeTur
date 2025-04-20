@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NorgeTur</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Norwegian tour</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+  
+  <script type="module" src="script.js"></script>
 </head>
 <body>
 
   <header>
     <nav>
-      <h1>NorgeTur</h1>
+      <span><a href="index.html">NorwegianTour<a></a></span>
       <ul>
         <li><a href="#about">Om oss</a></li>
         <li><a href="#destinations">Destinasjoner</a></li>
@@ -19,14 +25,84 @@
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
-    <section class="hero">
-      <h2>Reiser i Norge</h2>
-      <p>Oppdag nordlys, fjorder og unik kultur!</p>
-      <a href="#destinations" class="button">Utforsk steder</a>
-    </section>
   </header>
 
   <main>
+    <section class="custom-slider">
+      <div class="custom-slider__container">
+        <div class="custom-slider__track">
+          <div class="custom-slider__item" style="background-image: url('./img/Trolltunga.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name"> Trolltunga</h2>
+              <p class="custom-slider__description">A reimagined tour featuring breathtaking Norwegian scenery and precision execution</p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <div class="custom-slider__item" style="background-image: url('./img/Bergen.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name">Bergen</h2>
+              <p class="custom-slider__description">Renowned for its breathtaking Alpine scenery and precision in craftsmanship</p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <div class="custom-slider__item" style="background-image: url('./img/Stegastein.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name">Stegastein</h2>
+              <p class="custom-slider__description">
+                Stegastein is a scenic viewpoint on road 243 in Sogn og Fjordane County, Norway.
+                The 30m long and 4m wide platform made of steel and laminated pine offers views of Aurlandsvangen and the Aurlandsfjord
+              </p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <div class="custom-slider__item" style="background-image: url('./img/Oslo.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name">Oslo</h2>
+              <p class="custom-slider__description">
+                Oslo is the capital of Norway, located on the country's southern coast at the northern end of the Oslofjord.
+                The city is known for its parks and museums, many of which are located on the Bygde Peninsula.
+                In Oslo, it is worth visiting the Norwegian Maritime Museum and the Viking Ship Museum, which displays wooden ships from the 9th century.
+                The Holmenkollen ski jump, which is famous for the world's oldest ski museum, offers a beautiful view of the fjord.
+              </p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <div class="custom-slider__item" style="background-image: url('./img/Stavanger.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name">Stavanger</h2>
+              <p class="custom-slider__description">
+                Stavanger is a city in southwestern Norway.
+                The 12th-century Stavanger Cathedral dominates its center.
+                The Stavanger Museum offers insights into the city and its natural environment.
+                The Norwegian Petroleum Museum, styled as an oil platform, features underwater installations, a large drill, and escape hatches.
+                For shopping, head to Øvre Holmgate, a street known for its colorful buildings.
+              </p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <div class="custom-slider__item" style="background-image: url('./img/Trondheim.webp');">
+            <div class="custom-slider__content text_card">
+              <h2 class="custom-slider__name">Trondheim</h2>
+              <p class="custom-slider__description">
+                Trondheim is a city in central Norway, located on the shores of the Trondheim Fjord.
+                The city is home to the 11th-century Gothic Nidaros Cathedral, famous for its ornate rose window and ornate west façade. Nearby is the Archbishop's Palace Museum, which houses archaeological finds and sculptures, including gargoyles, that once adorned the cathedral.
+                The Ringve Museum is a musical instrument museum housed in a manor house and barn.
+              </p>
+              <button class="custom-slider__btn">See More</button>
+            </div>
+          </div>
+          <!-- Остальные карточки по аналогии -->
+        </div>
+    
+        <div class="custom-slider__controls">
+          <button class="custom-slider__prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="custom-slider__next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+
+
     <section id="about">
       <h2>Om oss</h2>
       <p>NorgeTur inspirerer til reiser i Norge ved å tilby nyttige tips, ruter og ideer for utendørs opplevelser.</p>
